@@ -1,0 +1,38 @@
+.title--section{
+    font-size:24px;
+}
+
+.title--menu{
+    font-family:'Shrikhand', cursive;
+    font-size:24px;
+}
+
+.title--footer{
+    font-family:'Shrikhand', cursive;
+    margin-bottom:22px;
+    font-size:23px;
+    font-weight:400;
+    color:white;
+    user-select:none;
+}
+
+.title--category{
+    font-size:18px;
+    text-transform:uppercase;
+    font-weight:400;
+
+    &::after{
+        content:'';
+        display:block;
+        margin-top:12px;
+        width:45px;
+        height:4px;
+        background-color:map-get($baseColor, tertiary);
+    }
+}
+
+.title--logo{
+    font-family:'Shrikhand', cursive;
+    font-size:32px;
+    text-transform:lowercase;
+}

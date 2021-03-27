@@ -1,0 +1,45 @@
+.icon-txt{
+    display:flex;
+    align-items:center;
+}
+
+.icon-txt--header{
+    .icon-txt__icon{
+        margin-right:18px;
+        color: map-get($baseColor, footer);
+    }
+
+    .icon-txt__description{
+        color: map-get($baseColor, footer);
+        font-weight:500;
+    }
+}
+
+.icon-txt--post{
+    .icon-txt__icon{
+        margin-right:20px;
+        color: map-get($baseColor, textPost);
+    }
+
+    .icon-txt__description{
+        font-size:16px;
+        font-weight:700;
+
+    }
+}
+
+.icon-txt--footer{
+    position:relative;
+    color:white;
+    .icon-txt__icon{
+        font-size:15px;
+    }
+
+    .icon-txt__description{
+        left:27px;
+        position:absolute;
+        font-size:15px;
+        font-weight:500;
+        float:right;
+    }
+}

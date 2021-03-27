@@ -1,0 +1,44 @@
+.item--menu{
+    display:flex;
+    overflow: hidden;
+    cursor: pointer;
+    user-select:none;
+    
+    border-radius:16px;
+    background-color:white;
+    
+    .item__header{
+        flex-grow:1;
+        margin:10px 20px;
+    }
+
+    .item__badge{
+        margin-right:-70px;
+        transition:margin-right ease-in-out 0.2s; 
+    }
+
+    .item__round{
+        transform: rotateZ(90deg);
+        transition: transform ease-in-out 0.2s;
+    }
+
+    .item__price{
+        font-weight:700;
+        font-size:18px;
+        display:flex;
+        flex-direction:column;
+        justify-content: flex-end;
+        padding-right:20px;
+        padding-bottom:10px;
+    }
+
+    &:hover{
+        .item__badge{
+            margin-right:-2px;
+        }
+
+        .item__round{
+            transform: rotate(0deg);
+        }
+    }
+}

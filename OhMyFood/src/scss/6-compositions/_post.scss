@@ -1,0 +1,22 @@
+.post--step{
+    display:flex;
+    padding:25px 0;
+    padding-left: 26px;
+    padding-right: 72px;
+    border-radius: 20px;
+    background-color:map-get($baseColor, introLeft);
+
+    &.active{
+        background-color:#F5EDFF;
+        .fa-store{
+            color:map-get($baseColor, primary);
+        }
+    }
+}
+
+@mixin post--laptop{
+    .post--step{
+        align-items: center;
+        flex-direction: column;
+    }
+}

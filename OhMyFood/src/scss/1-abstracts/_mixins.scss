@@ -1,0 +1,53 @@
+@mixin box($width, $height:$width){
+    width:$width;
+    height:$height;
+}
+
+
+@mixin delays($number, $delay){
+    @for $i from 1 through $number{
+        .delay-#{$i}{
+            animation-delay:$delay * $i * 1s;
+        }
+    }
+}
+
+@mixin gradiant($color){
+    background: $color;
+    background: linear-gradient(180deg, $color 20%, darken($color, 20%));
+}
+
+@mixin pseudo-cover($z-index){
+    content:'';
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    border-radius:inherit;
+    z-index:$z-index;
+}
+
+@mixin circular($circle-size, $numberItems){
+    top:50%;
+    left:50%;
+    position:absolute;
+    
+
+    $step: (360/$numberItems);
+    $angle: 0;
+
+    @for $i from 0 through $numberItems {
+        &:nth-child(#{$i}){
+            transform:
+                rotate($angle * 1deg)
+                translate($circle-size / 2)
+                rotate($angle * -1deg)
+        }
+
+        $angle: $angle + $step;
+    }
+}
+
+
+

@@ -1,0 +1,64 @@
+.l-menu{
+    padding-top:60px;
+    padding-bottom:85px;
+    display:block;
+    width:100%;
+    background-color:map-get($baseColor, introLeft);
+    border-radius: 20px 20px 0 0;
+
+    &__header{
+        justify-content:space-between;
+        align-items: center;
+        margin-bottom:45px;
+    }
+
+    &__wrapper{
+        max-width:700px;
+    }
+
+    &__grid{
+        grid-template-columns: minmax(0px, auto);
+        grid-auto-rows: auto;
+        grid-row-gap: 40px;
+        margin-bottom:50px;
+    }
+
+    &__title{
+        margin-bottom:14px;
+    }
+
+    &__choice{
+        margin-bottom:16px;
+    }
+
+    &__heart{
+        right:50px;
+        top:0px;
+    }
+}
+
+@mixin l-menu--laptop{
+    .l-menu{
+        &__grid{
+            grid-template-columns: repeat(2, minmax(300px, 1fr));
+            grid-gap: 40px;
+        }
+
+        &__wrapper{
+            max-width:1200px;
+        }
+    }   
+}
+
+@mixin l-menu--computer{
+    .l-menu{
+        &__grid{
+            grid-template-columns: repeat(3, minmax(300px, 1fr));
+            grid-gap:40px;
+        }
+
+        &__wrapper{
+            max-width:1400px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.card--restaurant{
+    user-select:none;
+    background-color:white;
+    border-radius:20px;
+    
+    &__img{
+        border-radius: 20px 20px 0 0;
+        height:175px;
+    }
+
+    .card__header{
+        margin-left: 16px;
+        margin-top:14px;
+    }
+
+    .card__state{
+        top:13px;
+        right:13px;
+    }
+
+    .card__heart{
+        bottom:35px;
+        right:16px;
+    }
+}

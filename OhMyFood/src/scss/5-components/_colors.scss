@@ -1,0 +1,24 @@
+.color-secondary{
+    color:map-get($baseColor, secondary)
+}
+
+.bg--primary{
+    background-color:map-get($baseColor, primary);
+}
+
+.bg--white{
+    background-color:white;
+}
+
+.bg--green{
+    background-color:map-get($baseColor, tertiary);
+}
+
+.bg-with-darken-color--green{
+    background-color:map-get($baseColor, tertiary);
+    color:darken(map-get($baseColor, tertiary), 40);
+}
+
+.shadow{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
+}

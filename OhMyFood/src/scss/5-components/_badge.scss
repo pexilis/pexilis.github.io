@@ -1,0 +1,60 @@
+.badge--call{
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+    display:block;
+    min-width:200px;
+    padding: 15px 10px;
+    border-radius:26px;
+    font-weight:500;    
+}
+
+.badge--rose{
+    @include gradiant(#e771da);
+    color:white;
+}
+
+.badge--primary{
+    background-color:map-get($baseColor, primary);
+    color:white;
+}
+
+.badge--tertiary{
+    background:map-get($baseColor, tertiary);
+}
+
+.badge__text{
+    position: relative;
+    display:block;
+    z-index:2;
+}
+
+.badge--count{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    font-size:12px;
+    width:25px;
+    height:25px;
+    
+    &::after{
+        counter-increment:badgeCounter;
+        content:counter(badgeCounter)
+    }
+}
+
+
+.badge--state{
+    padding:8px 15px;
+    border-radius:2px;
+    font-size:14px;
+    font-weight:500;
+}
+
+.badge--item{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:16px 20px;
+}

@@ -1,0 +1,33 @@
+.l-restaurant{
+    padding:60px 0px;
+    background-color:map-get($baseColor, introLeft);
+
+    &__title{
+        margin-bottom:27px;
+    }
+
+    &__wrapper{
+        grid-template-columns:1fr;
+        grid-auto-rows: 252px;
+        grid-row-gap: 17px;
+    }
+}
+
+@mixin l-restaurant--tablet(){
+    .l-restaurant{
+        &__wrapper{
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 252px;
+            grid-gap:55px;
+        }
+    }
+}
+
+@mixin l-restaurant--computer(){
+    .l-restaurant{
+        &__wrapper{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+

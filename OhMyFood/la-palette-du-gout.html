@@ -1,32 +1,18 @@
 <!DOCTYPE html>
-<html prefix="og: https://ogp.me/ns#" lang="fr">
+<html lang="fr">
 <head>
     <meta charset="UTF-8"> 
-    <meta name="application-name" content=""> 
-    <meta name="description" content="">
+    <meta name="application-name" content="OhMyFood"> 
+    <meta name="description" content="Commandez et dégustez les délicieux plats du restaurant gastronomique La palette du gout. Retrouvez aussi de nombreux restaurants de qualité chez OhMyFood">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:title" content="">
-    <meta property="og:description" content=""> 
-    <meta property="og:type" content="website"/>
-    <meta property="og:image" content="">
-    <meta property="og:image:secure_url" content=""/>
-    <meta property="og:image:type" content="image/" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="627" />
-    <meta property="og:image:alt" content=""/>
-    <meta property="og:url" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:locale" content="fr_FR">
-
-    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" type="text/css" href="src/css/menu.css">
     <script src="https://kit.fontawesome.com/943c921e25.js" crossorigin="anonymous"></script>
     <title>OhMyFood - Restaurant - La Palette du Goût</title>
 </head>
-<body>
+<body class="bg--palette">
     <header class="l-header l-header--menu grid">
         <div class="l-header__left flex relative shadow">
             <a href="index.html" rel="prev">
@@ -37,16 +23,13 @@
             </a>
         </div>
     </header>
-    <picture>
-        <source media="(min-width:1440px)" srcset="assets/img/background/xl/la-palette-du-gout.jpg">
-        <source media="(min-width:1023px) and (max-width:1439px)" srcset="assets/img/background/lg/la-palette-du-gout.jpg">
-        <source media="(min-width:768px) and (max-width:1023px)" srcset="assets/img/background/md/la-palette-du-gout.jpg"> 
-        <img class="img horizontal img--background" src="assets/img/background/sm/la-palette-du-gout.jpg" alt="Restaurant la palette du goût">
-    </picture>
+
+    <img class="img img--background" src="assets/img/la-palette-du-gout.jpg" alt="Fond d'écran du restaurant la palette du gout">
+    
     <main class="l-menu relative">
         <div class="l-center l-menu__wrapper">
             <header class="l-menu__header flex relative">
-                <h1 class="title--menu">La palette du gout</h1>
+                <h2 class="title--menu">La palette du gout</h2>
                 <div class="l-menu__heart absolute">
                     <i class="absolute far fa-heart icon--heart"></i>
                     <i class="absolute fas fa-heart icon--heart icon--heart-fill"></i>
@@ -55,11 +38,11 @@
 
             <div class="l-menu__grid grid">
                 <div class="l-menu__category">
-                    <h2 class="title--category l-menu__title">Entrées</h2>
+                    <h3 class="title--category l-menu__title">Entrées</h3>
                     <div>
                         <div class="l-menu__choice item--menu shadow apparition">
                             <header class="item__header hook--item relative">
-                                <h3 class="hook__title">Fricassée d'escargot</h3>
+                                <h4 class="hook__title">Fricassée d'escargot</h4>
                                 <p class="hook__description">Au piment d'Espelette</p>
                             </header>
                             <div class="item__price">25€</div>
@@ -68,9 +51,9 @@
                                     <i class="fas fa-check"></i>
                                 </span></div>
                         </div>
-                        <div class="l-menu__choice item--menu shadow apparition delay-1">
+                        <div class="l-menu__choice item--menu shadow apparition menu--delay-1">
                             <header class="item__header hook--item relative">
-                                <h3 class="hook__title">Foie gras de canard mi-cuit</h3>
+                                <h4 class="hook__title">Foie gras de canard mi-cuit</h4>
                                 <p class="hook__description">Et ses copeaux de truffe noire</p>
                             </header>
                             <div class="item__price">35€</div>
@@ -79,9 +62,9 @@
                                     <i class="fas fa-check"></i>
                                 </span></div>
                         </div>
-                        <div class="l-menu__choice item--menu shadow apparition delay-2">
+                        <div class="l-menu__choice item--menu shadow apparition menu--delay-2">
                             <header class="item__header hook--item relative">
-                                <h3 class="hook__title">Oeuf au plat</h3>
+                                <h4 class="hook__title">Oeuf au plat</h4>
                                 <p class="hook__description">Assaisonné à la truffe sur lit de caviar</p>
                             </header>
                             <div class="item__price">20€</div>
@@ -95,9 +78,9 @@
                 <div class="l-menu__category">
                     <h2 class="title--category l-menu__title">Plats</h2>
                     <div>
-                        <div class="l-menu__choice item--menu shadow apparition delay-3">
+                        <div class="l-menu__choice item--menu shadow apparition menu--delay-3">
                             <header class="item__header hook--item relative">
-                                <h3 class="hook__title">Fillet de boeuf aux herbes</h3>
+                                <h4 class="hook__title">Fillet de boeuf aux herbes</h4>
                                 <p class="hook__description">Accompagné de sa rimbambelle de légumes</p>
                             </header>
                             <div class="item__price">40€</div>
@@ -106,9 +89,9 @@
                                     <i class="fas fa-check"></i>
                                 </span></div>
                         </div>
-                        <div class="l-menu__choice item--menu shadow apparition delay-4">
+                        <div class="l-menu__choice item--menu shadow apparition menu--delay-4">
                             <header class="item__header hook--item relative">
-                                <h3 class="hook__title">Parmentier de queue de boeuf</h3>
+                                <h4 class="hook__title">Parmentier de queue de boeuf</h4>
                                 <p class="hook__description">A la truffe noire sur sa purée de panais</p>
                             </header>
                             <div class="item__price">35€</div>
@@ -117,9 +100,9 @@
                                     <i class="fas fa-check"></i>
                                 </span></div>
                         </div>
-                        <div class="l-menu__choice item--menu shadow apparition delay-5">
+                        <div class="l-menu__choice item--menu shadow apparition menu--delay-5">
                             <header class="item__header hook--item relative">
-                                <h3 class="hook__title">Filet de turbot</h3>
+                                <h4 class="hook__title">Filet de turbot</h4>
                                 <p class="hook__description">Aux agrumes</p>
                             </header>
                             <div class="item__price">44€</div>
@@ -133,9 +116,9 @@
                 <div class="l-menu__category">
                     <h2 class="title--category l-menu__title">Desserts</h2>
                     <div>
-                        <div class="l-menu__choice item--menu shadow apparition delay-6">
+                        <div class="l-menu__choice item--menu shadow apparition menu--delay-6">
                             <header class="item__header hook--item relative">
-                                <h3 class="hook__title">Paris-Brest</h3>
+                                <h4 class="hook__title">Paris-Brest</h4>
                                 <p class="hook__description">Revisité</p>
                             </header>
                             <div class="item__price">18€</div>
@@ -144,7 +127,7 @@
                                     <i class="fas fa-check"></i>
                                 </span></div>
                         </div>
-                        <div class="l-menu__choice item--menu shadow apparition delay-7">
+                        <div class="l-menu__choice item--menu shadow apparition menu--delay-7">
                             <header class="item__header hook--item relative">
                                 <h3 class="hook__title">Macaron au chocolat d'exception</h3>
                                 <p class="hook__description">Et glace à la vanille de Madagascar</p>
@@ -155,7 +138,7 @@
                                     <i class="fas fa-check"></i>
                                 </span></div>
                         </div>
-                        <div class="l-menu__choice item--menu shadow apparition delay-8">
+                        <div class="l-menu__choice item--menu shadow apparition menu--delay-8">
                             <header class="item__header hook--item relative">
                                 <h3 class="hook__title">Mousse au chocolat</h3>
                                 <p class="hook__description">Au piment d'Espelette et à la truffe noire</p>
@@ -172,7 +155,7 @@
         </div>
 
         <button class="l-menu__button absolute pos--center-horizontal badge--call badge--rose shadow transition--flashlight">
-            <div class="badge__text">Commander</div>
+            <span class="badge__text">Commander</span>
          </button>                        
     </main>
 

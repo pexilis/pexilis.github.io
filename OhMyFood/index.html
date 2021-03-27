@@ -1,30 +1,11 @@
 <!DOCTYPE html>
-<html prefix="og: https://ogp.me/ns#" lang="fr">
+<html lang="fr">
 <head>
     <meta charset="UTF-8"> 
-    <meta name="application-name" content=""> 
-    <meta name="description" content="">
+    <meta name="application-name" content="OhMyFood"> 
+    <meta name="description" content="Retrouver les meilleurs restaurants gastronomiques de sa ville. Commander votre menu en ligne et déguster dans des restaurants de qualité à proximité">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:title" content="">
-    <meta property="og:description" content=""> 
-    <meta property="og:type" content="website"/>
-    <meta property="og:image" content="">
-    <meta property="og:image:secure_url" content=""/>
-    <meta property="og:image:type" content="image/" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="627" />
-    <meta property="og:image:alt" content=""/>
-    <meta property="og:url" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:locale" content="fr_FR">
-
-    <meta name="apple-mobile-web-app-status-bar" content="">
-
-    <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="">
-    
-    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="src/css/index.css">
@@ -33,45 +14,45 @@
     <title>OhMyFood - Les meilleurs restaurants gastronomique à votre disposition</title>
 </head>
 <body>
-    <header class="l-header grid">
+    <header class="l-header">
         <div class="l-header__left flex relative shadow">
-            <img src="assets/img/logo/ohmyfood.svg" alt="OhMyFood!" class="img--header">
+            <h1 class="title--header">OhMyFood</h1>
         </div>
         <div class="l-header__right flex">
-            <div class="icon-txt icon-txt--header">
+            <form class="icon-txt icon-txt--header" name="localisation" method="POST">
                 <i class="fas fa-map-marker-alt icon-txt__icon"></i>
-                <span class="icon-txt__description">Paris, Belleville</span>
-            </div>
+                <input class="icon-txt__description" value="Paris, Belleville">
+            </form>
         </div>
     </header>
     
    <div class="l-foreground absolute">
         <div class="l-foreground__wrapper flex--center">
             <div class="spinner">
-                <div class="animated"></div>
-                <div class="animated"></div>
-                <div class="animated"></div>
-                <div class="animated"></div>
-                <div class="animated"></div>
-                <div class="animated"></div>
-                <div class="animated"></div>
-                <div class="animated"></div>
-                <div class="animated"></div>
-                <div class="animated"></div>
+                <div class="animated spinner--delay-9"></div>
+                <div class="animated spinner--delay-8"></div>
+                <div class="animated spinner--delay-7"></div>
+                <div class="animated spinner--delay-6"></div>
+                <div class="animated spinner--delay-5"></div>
+                <div class="animated spinner--delay-4"></div>
+                <div class="animated spinner--delay-3"></div>
+                <div class="animated spinner--delay-2"></div>
+                <div class="animated spinner--delay-1"></div>
+                <div class="animated "></div>
             </div>
         </div>
-   </div> 
+   </div>
 
     <main>
         <section class="l-intro">
             <div class="l-intro__left">
                 <div class="l-intro__wrapper--left flex l-center">
                     <div class="l-intro__hook hook hook--intro">
-                        <h1 class="hook__title">Réservez le menu qui vous convient</h1>
+                        <h2 class="hook__title">Réservez le menu qui vous convient</h2>
                         <p class="hook__description">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                     </div>
                     <button class="badge--call badge--rose transition--flashlight shadow">
-                        <div class="badge__text">Explorer nos restaurants</div>
+                        <span class="badge__text">Explorer nos restaurants</span>
                     </button>
                 </div>
             </div>
@@ -110,7 +91,7 @@
                 <div class="l-restaurant__wrapper grid">
                     <article class="card--restaurant relative shadow">
                         <a href="la-palette-du-gout.html">
-                            <img src="assets/img/thumbnails/restaurant/la-palette-du-gout.jpg" alt="" class="card--restaurant__img img horizontal">
+                            <img src="assets/img/la-palette-du-gout.jpg" alt="" class="card--restaurant__img img img--restaurant">
                         </a>
                         <span class="badge--state bg-with-darken-color--green card__state absolute">Nouveau</span>
                         <header class="card__header hook hook--restaurant">
@@ -123,9 +104,9 @@
                             <i class="absolute fas fa-heart card__heart icon--heart icon--heart-fill"></i>
                         </div>       
                     </article>
-                    <article href="la-note-enchantee.html" class="card--restaurant relative shadow">
+                    <article class="card--restaurant relative shadow">
                         <a href="la-note-enchantee.html">
-                            <img src="assets/img/thumbnails/restaurant/la-note-enchantee.jpg" alt="" class="card--restaurant__img img horizontal">
+                            <img src="assets/img/la-note-enchantee.jpg" alt="" class="card--restaurant__img img img--restaurant">
                         </a>
                         <span class="badge--state bg-with-darken-color--green card__state absolute">Nouveau</span>
                         <header class="card__header hook hook--restaurant">
@@ -140,7 +121,7 @@
                     </article>
                     <article class="card--restaurant relative shadow">
                         <a href="a-la-francaise.html">
-                            <img src="assets/img/thumbnails/restaurant/a-la-francaise.jpg" alt="" class="card--restaurant__img img horizontal">
+                            <img src="assets/img/a-la-francaise.jpg" alt="" class="card--restaurant__img img img--restaurant">
                         </a>
                         <span class="badge--state bg-with-darken-color--green card__state absolute">Nouveau</span>
                         <header class="card__header hook hook--restaurant">
@@ -153,9 +134,9 @@
                         <i class="absolute fas fa-heart card__heart icon--heart icon--heart-fill"></i>
                     </div>
                     </article>
-                    <article href="le-delice-des-sens.html" class="card--restaurant relative shadow">
+                    <article class="card--restaurant relative shadow">
                         <a href="le-delice-des-sens.html">
-                            <img src="assets/img/thumbnails/restaurant/le-delice-des-sens.jpg" alt="" class="card--restaurant__img img horizontal">
+                            <img src="assets/img/le-delice-des-sens.jpg" alt="" class="card--restaurant__img img img--restaurant">
                         </a>
                         <span class="badge--state bg-with-darken-color--green card__state absolute">Nouveau</span>
                         <header class="card__header hook hook--restaurant">
@@ -168,7 +149,7 @@
                             <i class="absolute fas fa-heart card__heart icon--heart icon--heart-fill"></i>
                         </div>
                     </article>
-                </div>
+            </div>
             </div>
         </section>
     </main>

@@ -1,8 +1,0 @@
-@media screen and (min-width:1024px) and (max-width:1439px){
-    @include l-menu--laptop;
-}
-
-@media screen and (min-width:1440px){
-    @include l-menu--computer;
-}
-

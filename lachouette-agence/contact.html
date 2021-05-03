@@ -6,200 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
     
-	<style>
-		body {
-    		margin: 0;
-    		padding: 0;
-    		background: #FFF;
-    		overflow-x: hidden;
-    		-webkit-font-smoothing: antialiased;
-    		-moz-osx-font-smoothing: grayscale;
-		}
+	<link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/bootstrap.min.css"></noscript>
 
-		a,
-		button {
-    		transition: all .3s ease-in-out;
-		}
+	<link rel="preload" href="css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/font-awesome.min.css"></noscript>
 
-		.bloc {
-    		width: 100%;
-    		clear: both;
-    		background: 50% 50% no-repeat;
-    		padding: 0 50px;
-    		-webkit-background-size: cover;
-    		-moz-background-size: cover;
-    		-o-background-size: cover;
-    		background-size: cover;
-    		position: relative;
-		}
+	<link rel="preload" href="css/et-line.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/et-line.min.css"></noscript>
 
-		.bloc .container {
-    		padding-left: 0;
-    		padding-right: 0;
-		}
-
-		.bloc-lg {
-    		padding: 100px 50px;
-		}
-
-		.bloc-sm {
-    		padding: 20px 50px;
-		}
-
-		.blockquote, .quote{
-    		max-width:520px;
-    		width:100%;
-    		margin:0 auto;
-		}
-
-		.testimony{
-   		 	max-width:550px;
-    		padding:15px;
-    		margin: 0 auto;
-		}
-
-		.testimony-quote{
-    		border:none;
-    		text-align:center;
-    		color:#575757;
-    		font-weight:600;
-    		font-size:16px;
-    		margin:0;
-		}
-
-		.testimony-author{
-   	 		font-size:16px;
-    		color:#333333;
-		}
-
-		.testimony-quote::before, .testimony-quote::after{
-    		content:'"';
-		}
-
-		.testimony-author{
-    		margin:0;
-    		display:block;
-    		text-align:center;
-		}
-
-		.bg-center,
-		.bg-l-edge,
-		.bg-r-edge,
-		.bg-t-edge,
-		.bg-b-edge,
-		.bg-tl-edge,
-		.bg-bl-edge,
-		.bg-tr-edge,
-		.bg-br-edge,
-		.bg-repeat {
-   		 	-webkit-background-size: auto!important;
-    		-moz-background-size: auto!important;
-    		-o-background-size: auto!important;
-    		background-size: auto!important;
-		}
-
-		.bg-repeat {
-    		background: repeat;
-		}
-
-		.texture-paper{
-    		position:relative;
-    		z-index:1;
-		}
-
-		.texture-paper::after {
-    		z-index:-1;
-    		content:'';
-    		position:absolute;
-    		top:0px;
-    		left:0px;
-    		width:100%;
-    		height:100%;
-    		border-radius:inherit;
-    		background-color:rgba(0, 0, 0, 0.5);
-		}
-
-		.b-parallax {
-    		background-attachment: fixed;
-		}
-
-		.d-bloc {
-    		color: rgba(255, 255, 255, .7);
-		}
-
-		.d-bloc .a-btn,
-		.d-bloc .navbar a,
-		.d-bloc .navbar-brand,
-		.d-bloc a .icon-sm,
-		.d-bloc a .icon-md,
-		.d-bloc a .icon-lg,
-		.d-bloc a .icon-xl,
-		.d-bloc h1 a,
-		.d-bloc h2 a,
-		.d-bloc h3 a,
-		.d-bloc h4 a,
-		.d-bloc h5 a,
-		.d-bloc h6 a,
-		.d-bloc p a {
-    		color: rgba(255, 255, 255, .6);
-		}
-
-		.navbar-collapse a {
-    		font-size:20px;
-    		margin-right:45px;
-		}
-
-		.arguments{
-    		margin: 100px 0;
-		}
-
-		.d-bloc .panel,
-		.l-bloc {
-    		color: rgba(0, 0, 0, .5);
-		}
-
-		.navbar {
-    		margin-bottom: 0;
-    		z-index: 1;
-		}
-
-		#bloc-1-hero h1 {
-    		font-size: 32px;
-		}
-
-		.navbar-brand {
-    		height: auto;
-    		padding: 3px 15px;
-    		font-size: 25px;
-    		font-weight: normal;
-    		font-weight: 600;
-    		line-height: 44px;
-		}
-
-		.navbar-brand img {
-    		max-height: 200px;
-    		margin: 0 5px 0 0;
-    		display: inline;
-		}
-
-	</style>
-	
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	
+    <link rel="preload" href="style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="style.min.css"></noscript>
     
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
+	<script defer src="./js/jquery-2.1.0.min.js"></script>
+	<script defer src="./js/bootstrap.min.js"></script>
+	<script defer src="./js/blocs.min.js"></script>
+	<script defer src="./js/jqBootstrapValidation.min.js"></script>
+	<script defer src="./js/formHandler.min.js"></script>
     <title>La Chouette Agence - Prenez rendez-vous avec nos experts en Web Design à Lyon</title>
 
-    <style>
-		
-	</style>
 <!-- Analytics -->
  
 <!-- Analytics END -->
